@@ -62,24 +62,38 @@ void setup() {
 
 
 void loop() {
-  byte b = random();
-  Serial.print("Sending packet: ");
-  Serial.print("Hello");
-  Serial.print('-');
-  Serial.print(counter);
-  Serial.print('-');
-  Serial.println(b);
 
-  // send packet
-  LoRa.beginPacket();
-  LoRa.print("Hello");
-  LoRa.write('-');
-  LoRa.print(counter);
-  LoRa.write('-');
-  LoRa.print(b);
-  Serial.print("Hello");
-  LoRa.endPacket();  
+  if (iaqSensor.run()) { // If new data is available
+   
+    //Serial.print("Sending packet: ");
+  
+    // send packet
+    LoRa.beginPacket();
+  
+    LoRa.print("Pressure: ");
+    LoRa.print(iaqSensor.pressure);
+    LoRa.print(" Pa, ");
 
+    LoRa.print("Temperature: ");
+    LoRa.print(iaqSensor.temperature);
+    LoRa.print(" *C, ");
+
+    LoRa.print("Humidity: ");
+    LoRa.print(iaqSensor.humidity);
+    LoRa.print(" %, ");
+
+    LoRa.print("IAQ: ");
+    LoRa.print(iaqSensor.iaq);
+    LoRa.print(" PPM, ");
+
+    LoRa.print("CO2: ");
+    LoRa.print(iaqSensor.co2Equivalent);
+    LoRa.print(" PPM");
+
+    LoRa.write('-');
+    LoRa.print(counter);
+    LoRa.endPacket();  
+  }
   counter++;
   delay(1000);
 }
