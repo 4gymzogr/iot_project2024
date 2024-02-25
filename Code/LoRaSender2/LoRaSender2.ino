@@ -28,24 +28,23 @@ void setup() {
 
 
 void loop() {
-  Serial.print("Sending packet: ");
-  
-  // send packet
-  LoRa.beginPacket();
-  
-  LoRa.print("Hello");
-  LoRa.write('-');
-  LoRa.print(counter);
-  LoRa.write('-');
   byte b = random();
-  LoRa.print(b);
-  LoRa.endPacket();
-  
+  Serial.print("Sending packet: ");
   Serial.print("Hello");
   Serial.print('-');
   Serial.print(counter);
   Serial.print('-');
   Serial.println(b);
+
+  // send packet
+  LoRa.beginPacket();
+  LoRa.print("Hello");
+  LoRa.write('-');
+  LoRa.print(counter);
+  LoRa.write('-');
+  LoRa.print(b);
+  Serial.print("Hello");
+  LoRa.endPacket();  
 
   counter++;
   delay(1000);
