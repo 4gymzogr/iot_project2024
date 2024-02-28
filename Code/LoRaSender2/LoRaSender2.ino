@@ -11,11 +11,22 @@ Bsec iaqSensor;
 String output;
 
 int counter = 0;
+//int resetPIN = 4;
+
+// reset arduino
+//void(* resetFunc) (void) = 0;
+
+unsigned long int nDuration;
 
 void setup() {
+  //pinMode(resetPIN, OUTPUT);
+  //digitalWrite(resetPIN, HIGH);
+  //delay(2000);
+
   Serial.begin(115200);
   while (!Serial);
-
+ 
+  
   //pinMode(LED_BUILTIN, OUTPUT);
   iaqSensor.begin(BME68X_I2C_ADDR_HIGH, Wire);
   output = "\nBSEC library version " + String(iaqSensor.version.major) + "." + String(iaqSensor.version.minor) + "." + String(iaqSensor.version.major_bugfix) + "." + String(iaqSensor.version.minor_bugfix);
@@ -52,17 +63,16 @@ void setup() {
       Serial.println("Initializing LoRa Ok!");
       delay(2000);
       break;
-
     }
   
     delay(1000);
     n++;
   }
+  nDuration = 0;
 }
 
 
 void loop() {
-
   if (iaqSensor.run()) { // If new data is available
    
     //Serial.print("Sending packet: ");
@@ -71,8 +81,8 @@ void loop() {
     LoRa.beginPacket();
   
     LoRa.print("Pressure: ");
-    LoRa.print(iaqSensor.pressure);
-    LoRa.print(" Pa, ");
+    LoRa.print(iaqSensor.pressure/100.0);
+    LoRa.print(" hPa, ");
 
     LoRa.print("Temperature: ");
     LoRa.print(iaqSensor.temperature);
@@ -92,10 +102,22 @@ void loop() {
 
     LoRa.write('-');
     LoRa.print(counter);
-    LoRa.endPacket();  
+    delay(10);
+    LoRa.endPacket(); 
+     
   }
   counter++;
   delay(1000);
+
+  // reset arduino after 5 hours
+  /*if (millis() - nDuration  >= 60000) {
+    delay(1000);
+    //resetFunc();
+    digitalWrite(resetPIN, LOW);
+    delay(1000);
+    nDuration = millis();
+  }*/
+
 }
 
 // Helper function definitions
