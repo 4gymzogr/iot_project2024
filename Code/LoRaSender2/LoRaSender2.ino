@@ -75,7 +75,7 @@ void setup() {
 void loop() {
   if (iaqSensor.run()) { // If new data is available
    
-    //Serial.print("Sending packet: ");
+    Serial.print("Sending packet: ");
   
     // send packet
     LoRa.beginPacket();
