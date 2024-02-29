@@ -11,11 +11,6 @@ Bsec iaqSensor;
 String output;
 
 int counter = 0;
-//int resetPIN = 4;
-
-// reset arduino
-//void(* resetFunc) (void) = 0;
-
 unsigned long int nDuration;
 
 void setup() {
