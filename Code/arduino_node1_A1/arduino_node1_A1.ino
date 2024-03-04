@@ -6,12 +6,16 @@
 
 // Global variables
 String output;
-String json_message;
+String json_msg = "Kostas";
 byte gateway_id = 0xDD;
 byte node1_id = 0xAA;
-unsigned long delay_time;
+unsigned long delay_time, count = 0;
 unsigned int ldr;
 bool lSend = true;
+
+byte recipient;          // recipient address
+byte sender;            // sender address
+byte incomingLength;
 
 // Functions declarations
 void checkIaqSensorStatus(void);
@@ -71,17 +75,83 @@ void setup() {
     Serial.println("LoRa RFM95 initializing failed.");
     while(true);
   }
+
+  // register the receive callback
+  LoRa.onReceive(onReceive);
+
+  // put the radio into receive mode
+  LoRa.receive();
 }
 
 
 void loop() {
-  String json = create_json();
-  Serial.println(json);
+  //json_msg = create_json();
+  if (lSend) {
+  Serial.println(recipient, HEX);
+  Serial.println(sender, HEX);
+  Serial.println(json_msg);
+  Serial.println(count);
+  lSend = false;
+  }
 
-  sendMessage(json, gateway_id, node1_id, 0x3e, 0x4e);
+  //sendMessage(json, gateway_id, node1_id, 0x3e, 0x4e);
 
-  delay(3000);
+  delay(1000);
 }
+
+
+void onReceive(int packetSize) {
+  if (packetSize == 0) return;          // if there's no packet, return
+
+  count++;
+  // read packet header bytes:
+  recipient = LoRa.read();          // recipient address
+  sender = LoRa.read();            // sender address
+  //incomingLength = LoRa.read();    // incoming msg length
+  //String incoming = "";
+
+  // read the rest of the message
+  //while (LoRa.available()) {
+  //  incoming += (char)LoRa.read();
+  //}
+  
+  // check length for error
+  // if (incomingLength != incoming.length()) {   
+  /*if (incomingLength != 2) {   
+    // error: message length does not match length
+    return;  // skip rest of function
+  }*/
+
+  // if the recipient isn't this device or broadcast,
+  /*if (recipient != node1_id && sender != gateway_id) {
+    //This message is not for me.
+    return;  // skip rest of function
+  }*/
+  
+  //int Val = incoming.toInt();
+  if (recipient == 0xAA) {
+    int msgSum = 0;
+    
+    json_msg = create_json();
+    json_msg = "RENA";
+      
+    /*for (int i=0; i<json_msg.length(); i++) {
+      msgSum += json_msg.charAt(i);
+    }
+      
+      byte byte1 = msgSum / 256;
+      byte byte2 = msgSum % 256;
+      int dataLength = json_msg.length();
+      dataLength ++;
+      
+      char total[dataLength];
+      json_msg.toCharArray(total, dataLength);
+      sendMessage(total, gateway_id, node1_id, byte1, byte2);*/
+      
+    lSend = true;
+  }
+}
+
 
 // Helper function definitions
 void checkIaqSensorStatus(void)
@@ -128,7 +198,7 @@ String create_json() {
   //ldr = analogRead(A0);
   ldr = 568;
 
-  json_message = "";
+  String json_message = "";
 
   // If new data is available on BME688
   if (iaqSensor.run()) { 

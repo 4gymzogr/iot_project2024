@@ -34,6 +34,9 @@ byte node1_id = 0xAA;
 byte node2_id = 0xBB;
 byte node3_id = 0xCC;
 
+byte recipient;
+byte sender;
+
 String SenderNode = "";
 String outcoming, incoming;
 String buf;
@@ -42,7 +45,7 @@ String buf;
 unsigned long int currentSecs;
 unsigned long int previousSecs;
 unsigned long int currentMillis;
-unsigned int interval = 1, Secs = 0;
+unsigned int interval = 1, seconds = 0;
 
 
 void InitWiFi() {
@@ -121,6 +124,10 @@ void setup() {
       Serial.println("Failed to connect LoRa module.");
       while (true);
   }
+  // register the receive callback
+  LoRa.onReceive(onReceive);
+  // put the radio into receive mode
+  LoRa.receive();
 }
 
 
@@ -149,44 +156,57 @@ void loop() {
   currentMillis = millis();
   currentSecs = currentMillis / 1000;
   if ((unsigned long)(currentSecs - previousSecs) >= interval) {
-    Secs = Secs + 1;
-    if (Secs > 12) {
-      Secs = 0;
+    seconds = seconds + 1;
+    Serial.println(seconds);
+    Serial.println(recipient);
+    Serial.println(sender);
+    if (seconds > 12) {
+      seconds = 0;
     }
     
-    if (Secs == 4) {
-      String message = "10";
-      char total[3];
-      message.toCharArray(total, 3);
-      sendMessage(total, gateway_id, node1_id);
-    } else if (Secs == 8) {
-      String message = "20";
-      char total[3];
-      message.toCharArray(total, 3);
-      sendMessage(total, gateway_id, node2_id);
+    if (seconds <= 4) {
+      //String message = "10";
+      //char total[3];
+      //message.toCharArray(total, 3);
+      //sendMessage(total, gateway_id, node1_id);
+      Serial.println(gateway_id, HEX);
+      Serial.println(node1_id, HEX);
+      sendMessage(gateway_id, node1_id);
+    } else if (seconds <= 8) {
+      //String message = "20";
+      //char total[3];
+      //message.toCharArray(total, 3);
+      Serial.println(gateway_id, HEX);
+      Serial.println(node2_id, HEX);
+      sendMessage(gateway_id, node2_id);
     }
-    else if (Secs <= 12) {
-      String message = "30";
-      char total[3];
-      message.toCharArray(total, 3);
-      sendMessage(total, gateway_id, node2_id);
+    else if (seconds <= 12) {
+      //String message = "30";
+      //char total[3];
+      //message.toCharArray(total, 3);
+      Serial.println(gateway_id, HEX);
+      Serial.println(node3_id, HEX);
+      sendMessage(gateway_id, node3_id);
     }
     
     previousSecs = currentSecs;
+    Serial.println(incoming);
+    incoming = "";
+    
   }
   
   // parse for a packet, and call onReceive with the result:
-  onReceive(LoRa.parsePacket());
+  //onReceive(LoRa.parsePacket());
 }
 
 
-void sendMessage(String outgoing, byte MasterNode, byte otherNode) {
-  LoRa.beginPacket();                   // start packet
-  LoRa.write(otherNode);              // add destination address
-  LoRa.write(gateway_id);             // add sender address
-  LoRa.write(outgoing.length());        // add payload length
-  LoRa.print(outgoing);                 // add payload
-  LoRa.endPacket();                     // finish packet and send it
+void sendMessage(byte g_id, byte node_id) {
+  LoRa.beginPacket();                 // start packet
+  LoRa.write(node_id);              // add destination address
+  LoRa.write(g_id);                   // add sender address
+  //LoRa.write(outgoing.length());    // add payload length
+  //LoRa.print(outgoing);             // add payload
+  LoRa.endPacket();                   // finish packet and send it
 }
 
 
@@ -194,9 +214,9 @@ void onReceive(int packetSize) {
   if (packetSize == 0) return;          // if there's no packet, return
 
   // read four bytes for packet header:
-  int recipient = LoRa.read();          // recipient address
-  byte sender = LoRa.read();            // sender address
-  byte incomingMsgId = LoRa.read();     // incoming msg ID
+  recipient = LoRa.read();        // recipient address
+  sender = LoRa.read();            // sender address
+  //byte incomingMsgId = LoRa.read();   // incoming msg ID
   byte incomingLength = LoRa.read();    // incoming msg length
   byte sigByte1 = LoRa.read();          // incoming sigByte1
   byte sigByte2 = LoRa.read();          // incoming sigByte2
@@ -215,7 +235,8 @@ void onReceive(int packetSize) {
   while (LoRa.available()) {
     incoming += (char)LoRa.read();
   }
-  
+
+  /*  
   // check length for error
   if (incomingLength != incoming.length() ) {   
     return;  // skip rest of function
@@ -261,4 +282,5 @@ void onReceive(int packetSize) {
       mqttClient.endMessage();
     }
   }
+  */
 }
