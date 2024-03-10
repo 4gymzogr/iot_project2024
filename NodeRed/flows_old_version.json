@@ -1,0 +1,3022 @@
+[
+    {
+        "id": "f334cecee55fa292",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c76e8122ea7bac71",
+        "type": "tab",
+        "label": "Node1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "771c6922b705b177",
+        "type": "tab",
+        "label": "Node2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "280a3e168186d61a",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b5b07a40e9c6fb2e",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 80,
+        "wires": [
+            [
+                "9c8352457a92d70b",
+                "131cacaa1d78d301"
+            ]
+        ]
+    },
+    {
+        "id": "3c539839177c08b6",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 680,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "449eac0a205a6526",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 500,
+        "wires": [
+            [
+                "a1be5e982c7cc84a",
+                "19158d9b69b632d1",
+                "867b01e36327dfae"
+            ]
+        ]
+    },
+    {
+        "id": "ade3bd60c737dc38",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 320,
+        "wires": [
+            [
+                "86f3d313ac0255f9",
+                "a278e43c89f04c1c"
+            ]
+        ]
+    },
+    {
+        "id": "efb8e09ff72bdf82",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 200,
+        "wires": [
+            [
+                "c0536d6539885c79",
+                "5fcbcad65a0e4189",
+                "46c8d601b8d99038"
+            ]
+        ]
+    },
+    {
+        "id": "52f35f776ed2ad76",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 600,
+        "wires": [
+            [
+                "9e9f88545b4ba71f",
+                "654ab5e9394c82ee"
+            ]
+        ]
+    },
+    {
+        "id": "d68f1c8dd59edb06",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 100,
+        "wires": [
+            [
+                "122f36e64e1d55bf",
+                "8284ebc3f0f5c5ee"
+            ]
+        ]
+    },
+    {
+        "id": "da479a5d01c32ddd",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 700,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5c09ca80f656b61",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "16140224f0e255ac"
+            ]
+        ]
+    },
+    {
+        "id": "92241340851b70a5",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 220,
+        "wires": [
+            [
+                "32b48d3a32fb1ee4",
+                "34343b18fae3af71",
+                "ac1e3a1c61881d57"
+            ]
+        ]
+    },
+    {
+        "id": "dfe60b1951f6a0de",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 780,
+        "wires": [
+            [
+                "749afb641148588c",
+                "493025f7ea7658f5"
+            ]
+        ]
+    },
+    {
+        "id": "ede1d6a28e1cd414",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 640,
+        "wires": [
+            [
+                "23b2e793461814b7",
+                "7f472804d1c32e56",
+                "6eb9856f94e22e4e"
+            ]
+        ]
+    },
+    {
+        "id": "bdafd31522991eb1",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 920,
+        "wires": [
+            [
+                "31cc7715f92be0dd",
+                "25e3440273d107ed",
+                "9ca6a91689eb253f"
+            ]
+        ]
+    },
+    {
+        "id": "76b686ccae53653a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.3.30",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "11c936059aa3867a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0b02e048495b542e",
+        "type": "ui_tab",
+        "name": "Node1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed727437921543ca",
+        "type": "ui_tab",
+        "name": "Node2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "29e2bf452d5cc9c8",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "0b02e048495b542e",
+        "order": 7,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66d024c0d9fa31d1",
+        "type": "ui_group",
+        "name": "Group2",
+        "tab": "0b02e048495b542e",
+        "order": 8,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7ef82e1ef84e5eb",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "ed727437921543ca",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8502275a53f7e711",
+        "type": "ui_group",
+        "name": "Group2",
+        "tab": "ed727437921543ca",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eab8a7b87a22a685",
+        "type": "mqtt in",
+        "z": "f334cecee55fa292",
+        "name": "Read Temperature",
+        "topic": "topic/temperature",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "dea7de7ccc66a840"
+            ]
+        ]
+    },
+    {
+        "id": "efaf982b0ec40d03",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1a7d943e6dd8fe24",
+        "type": "mqtt in",
+        "z": "f334cecee55fa292",
+        "name": "Read humidity",
+        "topic": "topic/humidity",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "0f8a088ce2c61c23"
+            ]
+        ]
+    },
+    {
+        "id": "0f8a088ce2c61c23",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "aeefa32cc2df05f9",
+        "type": "inject",
+        "z": "f334cecee55fa292",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "5bb2a89752389cd4"
+            ]
+        ]
+    },
+    {
+        "id": "5bb2a89752389cd4",
+        "type": "http request",
+        "z": "f334cecee55fa292",
+        "name": "Openweather API",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=37.9015&lon=23.76817&appid=52b3b1062cf121ccbb68e2a9bd53a4eb&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 480,
+        "wires": [
+            [
+                "7c482343f5359b86",
+                "e05a8b304dea10d8",
+                "fcbb1061271ce29b"
+            ]
+        ]
+    },
+    {
+        "id": "9160e8ecb2318fbb",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "Temperature",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7c482343f5359b86",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "OpenWeathermap",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e05a8b304dea10d8",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "City",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.name",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6c7c8105b1a52da5",
+        "type": "mqtt out",
+        "z": "f334cecee55fa292",
+        "name": "Send alarm",
+        "topic": "topic/alarm",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 470,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "cfc14aa3787a853e",
+        "type": "inject",
+        "z": "f334cecee55fa292",
+        "name": "Led ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "6c7c8105b1a52da5"
+            ]
+        ]
+    },
+    {
+        "id": "fcbb1061271ce29b",
+        "type": "function",
+        "z": "f334cecee55fa292",
+        "name": "function 1",
+        "func": "var temp = \"Θερμοκρασία: \" + msg.payload.main.temp + \" ºC\";\nmsg.payload = temp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 520,
+        "wires": [
+            [
+                "9160e8ecb2318fbb"
+            ]
+        ]
+    },
+    {
+        "id": "7080a739e2f4fa3a",
+        "type": "mqtt out",
+        "z": "f334cecee55fa292",
+        "name": "Send alarm",
+        "topic": "topic/alarm",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 470,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "18cd4b28c86464e0",
+        "type": "inject",
+        "z": "f334cecee55fa292",
+        "name": "Led OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 200,
+        "y": 660,
+        "wires": [
+            [
+                "7080a739e2f4fa3a"
+            ]
+        ]
+    },
+    {
+        "id": "5de15760da3346f0",
+        "type": "mqtt in",
+        "z": "f334cecee55fa292",
+        "name": "",
+        "topic": "topic/pressure",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "6277c6cbf5e1913a"
+            ]
+        ]
+    },
+    {
+        "id": "6277c6cbf5e1913a",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "db1a5373a3c9e694",
+        "type": "mqtt in",
+        "z": "f334cecee55fa292",
+        "name": "",
+        "topic": "topic/ldr",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "15cfcc844b4d651d"
+            ]
+        ]
+    },
+    {
+        "id": "15cfcc844b4d651d",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dea7de7ccc66a840",
+        "type": "change",
+        "z": "f334cecee55fa292",
+        "name": "FormatTa1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "msg",
+                "to": "Temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "°C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "efaf982b0ec40d03"
+            ]
+        ]
+    },
+    {
+        "id": "ba7badd32e1bc620",
+        "type": "inject",
+        "z": "f334cecee55fa292",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Math.floor(Math.random() * 40)",
+        "payloadType": "jsonata",
+        "x": 190,
+        "y": 740,
+        "wires": [
+            [
+                "fe1dae5a1766fef7"
+            ]
+        ]
+    },
+    {
+        "id": "7a36e133e3273c4e",
+        "type": "debug",
+        "z": "f334cecee55fa292",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "fe1dae5a1766fef7",
+        "type": "change",
+        "z": "f334cecee55fa292",
+        "name": "Format",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "type",
+                "pt": "msg",
+                "to": "Temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "alarm",
+                "pt": "msg",
+                "to": "payload>20 ? \"alarm\" : \"no alarm\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 740,
+        "wires": [
+            [
+                "85fe0af6f337aef3"
+            ]
+        ]
+    },
+    {
+        "id": "85fe0af6f337aef3",
+        "type": "function",
+        "z": "f334cecee55fa292",
+        "name": "function 2",
+        "func": "var currentDate = new Date(msg.timestamp);\nvar year = currentDate.getFullYear();\nvar month = currentDate.getMonth();\nvar day = currentDate.getDate();\nvar hour = currentDate.getHours();\nvar minutes = currentDate.getMinutes();\nvar seconds = currentDate.getSeconds();\n\nmsg.timestamp = currentDate.toString();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 740,
+        "wires": [
+            [
+                "7a36e133e3273c4e"
+            ]
+        ]
+    },
+    {
+        "id": "fe6114c3fb1f2642",
+        "type": "mqtt in",
+        "z": "c76e8122ea7bac71",
+        "name": "Home inside JSON",
+        "topic": "topic/node1",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "a085203690fe6c75"
+            ]
+        ]
+    },
+    {
+        "id": "9c8352457a92d70b",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Table JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3a6317a110dee510",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Data in table",
+        "func": "var tableData = flow.get(\"savedData1\") || [];\nvar alarm_led = \"OFF\";\n\nif (msg.payload.red_led) {\n    alarm_led = \"ON\";\n}\nelse {\n    alarm_led = \"OFF\";\n}\n\nif (typeof tableData  === \"object\") {\n    tableData.unshift({\n            \"timestamp\"     : new Date().toLocaleString(),\n            \"temperature\"   : msg.payload.temperature,\n            \"pressure\"      : msg.payload.pressure,\n            \"ldr\"           : msg.payload.ldr,\n            \"alarm_led\"     : alarm_led\n    });\n}\n\nif (tableData.length > 6) {\n    tableData.pop();\n}\n\nmsg.payload = tableData;\n\nflow.set(\"savedData1\", tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "b5b07a40e9c6fb2e"
+            ]
+        ]
+    },
+    {
+        "id": "131cacaa1d78d301",
+        "type": "ui_table",
+        "z": "c76e8122ea7bac71",
+        "group": "29e2bf452d5cc9c8",
+        "name": "Node1 table",
+        "order": 1,
+        "width": "15",
+        "height": "4",
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Date/Time (UTC)",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "temperature",
+                "title": "Tair (°C)",
+                "width": "150",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "pressure",
+                "title": "Πίεση (hPa)",
+                "width": "140",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ldr",
+                "title": "Φωτεινότητα (Candiles)",
+                "width": "200",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "alarm_led",
+                "title": "Alarm LED",
+                "width": "110",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 970,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c5f4291fc9cc028b",
+        "type": "comment",
+        "z": "c76e8122ea7bac71",
+        "name": "Foarmat data for the table",
+        "info": "",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6e53147c3a8fa153",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract temprature value",
+        "func": "msg.payload = msg.payload.temperature;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "efb8e09ff72bdf82"
+            ]
+        ]
+    },
+    {
+        "id": "c0536d6539885c79",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Tair node1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5fcbcad65a0e4189",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Temperature Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 1,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Θερμοκρασία Node1",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c7e90f09ca1e5456",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract LDR value",
+        "func": "msg.payload = msg.payload.ldr;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [
+                "ade3bd60c737dc38"
+            ]
+        ]
+    },
+    {
+        "id": "a278e43c89f04c1c",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "LDR Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 5,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Φωτεινότητα node1",
+        "label": "Candila",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#52a4c7",
+            "#52a4c7"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "86f3d313ac0255f9",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "LDR Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 6,
+        "width": "6",
+        "height": 4,
+        "label": "Φωτεινότητα Node1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#52a4c7",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "918e7d47a4b23128",
+        "type": "ui_template",
+        "z": "c76e8122ea7bac71",
+        "group": "29e2bf452d5cc9c8",
+        "name": "Node1 map",
+        "order": 4,
+        "width": "15",
+        "height": "9",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17f2c34ae46983ed",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Filter",
+        "func": "if (msg.payload.action === \"connected\") {\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "8af6d2ee5f523bd4"
+            ]
+        ]
+    },
+    {
+        "id": "8af6d2ee5f523bd4",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Set station position",
+        "func": "// Glyfada\nvar lat = 37.90147;\nvar lon = 23.76821;\n\n// Kavros\n/*var lat = 35.34796;\nvar lon = 24.29862;*/\n\nvar tair = msg.payload.temperature;\nvar ldr = msg.payload.ldr;\nvar pre = msg.payload.pressure;\n\n/*tair = tair.toFixed(2);\nldr = ldr.toFixed(2);\npre = pre.toFixed(2);*/\n\nmsg.payload = {\n    lat : lat,\n    lon : lon,\n    name : \"Node1\",\n    icon : \"fa-map-marker fa-3x\",\n    iconColor: \"blue\",\n    \"Tair (°C)\": tair,\n    \"Pressure (hPa)\": pre,\n    \"Ldr (Can)\": ldr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 780,
+        "wires": [
+            [
+                "10a0e1593504ce8e"
+            ]
+        ]
+    },
+    {
+        "id": "10a0e1593504ce8e",
+        "type": "worldmap",
+        "z": "c76e8122ea7bac71",
+        "name": "Node1 map",
+        "lat": "37.90147",
+        "lon": "23.76821",
+        "zoom": "15",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_node1",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 810,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9622c6ae508a1756",
+        "type": "worldmap in",
+        "z": "c76e8122ea7bac71",
+        "name": "Node1 map",
+        "path": "/worldmap_node1",
+        "events": "connect,disconnect,point,layer,bounds,files,draw,other",
+        "x": 110,
+        "y": 780,
+        "wires": [
+            [
+                "17f2c34ae46983ed"
+            ]
+        ]
+    },
+    {
+        "id": "3afbceb3ee73c584",
+        "type": "inject",
+        "z": "c76e8122ea7bac71",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/worldmap_node1",
+        "payloadType": "str",
+        "x": 150,
+        "y": 840,
+        "wires": [
+            [
+                "ee08750d04a2b683"
+            ]
+        ]
+    },
+    {
+        "id": "ee08750d04a2b683",
+        "type": "template",
+        "z": "c76e8122ea7bac71",
+        "name": "Dimentions",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload}}} height=465px; width=760px;></iframe>",
+        "output": "str",
+        "x": 370,
+        "y": 840,
+        "wires": [
+            [
+                "918e7d47a4b23128"
+            ]
+        ]
+    },
+    {
+        "id": "46b56f7976b11a70",
+        "type": "comment",
+        "z": "c76e8122ea7bac71",
+        "name": "Χάρτης σταθμών στη Γλυφάδα",
+        "info": "",
+        "x": 160,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "3aa805ff24486ba5",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract Pressure value",
+        "func": "msg.payload = msg.payload.pressure;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 500,
+        "wires": [
+            [
+                "449eac0a205a6526"
+            ]
+        ]
+    },
+    {
+        "id": "a1be5e982c7cc84a",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Pressure in",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "19158d9b69b632d1",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Pressure Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 3,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Πίεση Node1",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "300",
+        "max": "1200",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "867b01e36327dfae",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Pressure Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 4,
+        "width": "6",
+        "height": 4,
+        "label": "Πίεση εσωτερικά",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28422236916296a2",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract alarm LED status",
+        "func": "if (msg.payload.red_led==1) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 600,
+        "wires": [
+            [
+                "52f35f776ed2ad76"
+            ]
+        ]
+    },
+    {
+        "id": "a4244a8a8a1bdeaa",
+        "type": "ui_switch",
+        "z": "c76e8122ea7bac71",
+        "name": "Active alarm led",
+        "label": "Alarm LED (On/Off)",
+        "tooltip": "",
+        "group": "66d024c0d9fa31d1",
+        "order": 8,
+        "width": "6",
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "L1_ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "L1_OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "f33fde8f6635a563"
+            ]
+        ]
+    },
+    {
+        "id": "f33fde8f6635a563",
+        "type": "mqtt out",
+        "z": "c76e8122ea7bac71",
+        "name": "send alarm led",
+        "topic": "topic/alarm",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 360,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9e9f88545b4ba71f",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Alarm LED status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "654ab5e9394c82ee",
+        "type": "ui_led",
+        "z": "c76e8122ea7bac71",
+        "order": 7,
+        "group": "66d024c0d9fa31d1",
+        "width": "6",
+        "height": "1",
+        "label": "Alarm led Node1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#595f59",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Alarm led Node1",
+        "x": 990,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "148ade81da9f0d68",
+        "type": "inject",
+        "z": "c76e8122ea7bac71",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 940,
+        "wires": [
+            [
+                "01cfad595cc87736"
+            ]
+        ]
+    },
+    {
+        "id": "01cfad595cc87736",
+        "type": "change",
+        "z": "c76e8122ea7bac71",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "savedData1",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed17cda28c30e27c",
+        "type": "comment",
+        "z": "c76e8122ea7bac71",
+        "name": "Cleat table data",
+        "info": "",
+        "x": 120,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "ee9ffb86432feb68",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Input JSON obj",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a085203690fe6c75",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Convert str values to float",
+        "func": "msg.payload.temperature = parseFloat(msg.payload.Temperature);\nmsg.payload.ldr = parseInt(msg.payload.Ldr);\nmsg.payload.pressure = parseFloat(msg.payload.Pressure);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "ee9ffb86432feb68",
+                "c7e90f09ca1e5456",
+                "6e53147c3a8fa153",
+                "3a6317a110dee510",
+                "3aa805ff24486ba5",
+                "28422236916296a2",
+                "7f211fca46924fb8",
+                "8af6d2ee5f523bd4"
+            ]
+        ]
+    },
+    {
+        "id": "7f211fca46924fb8",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "function 3",
+        "func": "if (msg.payload.ldr < 250) {\n    msg.payload = \"R1_LIGHTS_ON\";\n}\nelse {\n    msg.payload = \"R1_LIGHTS_OFF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "4fcfe9c6aceb0367"
+            ]
+        ]
+    },
+    {
+        "id": "4fcfe9c6aceb0367",
+        "type": "mqtt out",
+        "z": "c76e8122ea7bac71",
+        "name": "Send r1_lights",
+        "topic": "topic/r1_lights",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 980,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "46c8d601b8d99038",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Temperature Node1",
+        "group": "66d024c0d9fa31d1",
+        "order": 2,
+        "width": "6",
+        "height": 4,
+        "label": "Θερμοκρασία Node1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1000,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb3eb870e60e64ae",
+        "type": "mqtt in",
+        "z": "771c6922b705b177",
+        "name": "Home inside JSON",
+        "topic": "topic/node2",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "57e31de528e4b1ca",
+                "1138fef503d7f520"
+            ]
+        ]
+    },
+    {
+        "id": "122f36e64e1d55bf",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Table JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cf46a8b246670ddb",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Data in table",
+        "func": "var tableData = flow.get(\"savedData2\") || [];\n// var alarm_led = \"OFF\";\n\n/*if (msg.payload.red_led) {\n    alarm_led = \"ON\";\n}\nelse {\n    alarm_led = \"OFF\";\n}*/\n\nif (typeof tableData  === \"object\") {\n    tableData.unshift({\n            \"timestamp\"     : new Date().toLocaleString(),\n            \"temperature\"   : msg.payload.temperature,\n            \"air_quality\"   : msg.payload.air_quality,\n            \"pressure\"      : msg.payload.pressure,\n            \"humidity\"      : msg.payload.humidity,\n            \"ldr\"           : msg.payload.ldr\n    });\n}\n\nif (tableData.length > 6) {\n    tableData.pop();\n}\n\nmsg.payload = tableData;\n\nflow.set(\"savedData2\", tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "d68f1c8dd59edb06"
+            ]
+        ]
+    },
+    {
+        "id": "8284ebc3f0f5c5ee",
+        "type": "ui_table",
+        "z": "771c6922b705b177",
+        "group": "b7ef82e1ef84e5eb",
+        "name": "Node2 table",
+        "order": 1,
+        "width": 15,
+        "height": 4,
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Date/Time (UTC)",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "temperature",
+                "title": "Tair (°C)",
+                "width": "120",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "air_quality",
+                "title": "Αέρας (ppm)",
+                "width": "125",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "pressure",
+                "title": "Πίεση (hPa)",
+                "width": "140",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "humidity",
+                "title": "Υγρασία (%)",
+                "width": "130",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ldr",
+                "title": "LDR (Can)",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ff52b8a762d342ba",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Foarmat data for the table",
+        "info": "",
+        "x": 650,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6d769874d88e6a16",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract temprature value",
+        "func": "msg.payload = msg.payload.temperature;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "92241340851b70a5"
+            ]
+        ]
+    },
+    {
+        "id": "32b48d3a32fb1ee4",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Tair node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "34343b18fae3af71",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Temperature Node2",
+        "group": "8502275a53f7e711",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Θερμοκρασία Node2",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ac1e3a1c61881d57",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Temperature Node2",
+        "group": "8502275a53f7e711",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Θερμοκρασία Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e6e600",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d8378a33cbaefb8",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract LDR value",
+        "func": "msg.payload = msg.payload.ldr;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "9c4aceab35821847",
+                "266ea3547c9ea32a",
+                "04050c5abe9cb09e"
+            ]
+        ]
+    },
+    {
+        "id": "02fbe1c1233fbf92",
+        "type": "ui_template",
+        "z": "771c6922b705b177",
+        "group": "b7ef82e1ef84e5eb",
+        "name": "Node2 map",
+        "order": 2,
+        "width": 15,
+        "height": "9",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f351157110ae2c3",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Filter",
+        "func": "if (msg.payload.action === \"connected\") {\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1120,
+        "wires": [
+            [
+                "cfe04ab298b51eaf"
+            ]
+        ]
+    },
+    {
+        "id": "cfe04ab298b51eaf",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Set station position",
+        "func": "// Glyfada\nvar lat = 37.90147;\nvar lon = 23.76821;\n\n// Kavros\n// var lat = 35.34796;\n// var lon = 24.29862;\n\nvar tair = msg.payload.temperature;\nvar ldr = msg.payload.ldr;\nvar pre = msg.payload.pressure;\nvar hum = msg.payload.humidity;\nvar air_q = msg.payload.air_quality;\n\n/*tair = tair.toFixed(2);\nldr = ldr.toFixed(2);\npre = pre.toFixed(2);*/\n\nmsg.payload = {\n    lat : lat,\n    lon : lon,\n    name : \"Node2\",\n    icon : \"fa-map-marker fa-3x\",\n    iconColor: \"blue\",\n    \"Tair (°C)\": tair,\n    \"AirQuality\": air_q,\n    \"Pressure (hPa)\": pre,\n    \"Humidity (%)\": hum,\n    \"Ldr (Can)\": ldr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1120,
+        "wires": [
+            [
+                "204cb46e396d0d14"
+            ]
+        ]
+    },
+    {
+        "id": "204cb46e396d0d14",
+        "type": "worldmap",
+        "z": "771c6922b705b177",
+        "name": "Node2 map",
+        "lat": "37.90147",
+        "lon": "23.76821",
+        "zoom": "15",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_node2",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 830,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "d556bd47cfd4b352",
+        "type": "worldmap in",
+        "z": "771c6922b705b177",
+        "name": "Node2 map",
+        "path": "/worldmap_node2",
+        "events": "connect,disconnect,point,layer,bounds,files,draw,other",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "7f351157110ae2c3"
+            ]
+        ]
+    },
+    {
+        "id": "c22e19f88e1e9d3c",
+        "type": "inject",
+        "z": "771c6922b705b177",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/worldmap_node2",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "bda665feb0640712"
+            ]
+        ]
+    },
+    {
+        "id": "bda665feb0640712",
+        "type": "template",
+        "z": "771c6922b705b177",
+        "name": "Dimentions",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload}}} height=465px; width=760px;></iframe>",
+        "output": "str",
+        "x": 390,
+        "y": 1180,
+        "wires": [
+            [
+                "02fbe1c1233fbf92"
+            ]
+        ]
+    },
+    {
+        "id": "96a6fb95706371f8",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Χάρτης σταθμών στη Γλυφάδα",
+        "info": "",
+        "x": 180,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "bbebce59da751198",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Humidity value",
+        "func": "msg.payload = msg.payload.humidity;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "e5c09ca80f656b61",
+                "457e7c5de4b21770",
+                "f08e145d65e93eae"
+            ]
+        ]
+    },
+    {
+        "id": "16140224f0e255ac",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Humidity Node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d7bd0fac8cfc84aa",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract alarm LED status",
+        "func": "if (msg.payload.red_led==1) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 780,
+        "wires": [
+            [
+                "dfe60b1951f6a0de"
+            ]
+        ]
+    },
+    {
+        "id": "47856cecf46804d0",
+        "type": "ui_switch",
+        "z": "771c6922b705b177",
+        "name": "Active alarm led",
+        "label": "Alarm LED (On/Off)",
+        "tooltip": "",
+        "group": "b7ef82e1ef84e5eb",
+        "order": 3,
+        "width": "6",
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "L1_ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "L1_OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 140,
+        "y": 840,
+        "wires": [
+            [
+                "e88e0451ebd0c6ce"
+            ]
+        ]
+    },
+    {
+        "id": "e88e0451ebd0c6ce",
+        "type": "mqtt out",
+        "z": "771c6922b705b177",
+        "name": "send alarm led",
+        "topic": "topic/alarm_node1",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 380,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "749afb641148588c",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Alarm LED status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "493025f7ea7658f5",
+        "type": "ui_led",
+        "z": "771c6922b705b177",
+        "order": 4,
+        "group": "b7ef82e1ef84e5eb",
+        "width": "6",
+        "height": "1",
+        "label": "Alarm led Node2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#595f59",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Alarm led Node2",
+        "x": 1010,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "a089ffe897952802",
+        "type": "inject",
+        "z": "771c6922b705b177",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1280,
+        "wires": [
+            [
+                "9e6981cffb58ef36"
+            ]
+        ]
+    },
+    {
+        "id": "9e6981cffb58ef36",
+        "type": "change",
+        "z": "771c6922b705b177",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "savedData2",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be71306424ccb652",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Cleat table data",
+        "info": "",
+        "x": 140,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "286743f714bb64c5",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Input JSON obj",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "57e31de528e4b1ca",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Convert str values to numbers",
+        "func": "msg.payload.temperature = parseFloat(msg.payload.Temperature);\nmsg.payload.humidity = parseInt(msg.payload.Humidity);\nmsg.payload.pressure = parseFloat(msg.payload.Pressure);\nmsg.payload.ldr = parseInt(msg.payload.Ldr); \nmsg.payload.air_quality = parseFloat(msg.payload.Air_quality);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "cf46a8b246670ddb",
+                "6d769874d88e6a16",
+                "5d8378a33cbaefb8",
+                "286743f714bb64c5",
+                "bbebce59da751198",
+                "d7bd0fac8cfc84aa",
+                "8737939416951be7",
+                "cfe04ab298b51eaf",
+                "0a0f73f3eb07c599",
+                "97300858c8ff4423"
+            ]
+        ]
+    },
+    {
+        "id": "8737939416951be7",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "function 4",
+        "func": "if (msg.payload.ldr < 250) {\n    msg.payload = \"R1_LIGHTS_ON\";\n}\nelse {\n    msg.payload = \"R1_LIGHTS_OFF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1060,
+        "wires": [
+            [
+                "b8a0394003094ed7"
+            ]
+        ]
+    },
+    {
+        "id": "b8a0394003094ed7",
+        "type": "mqtt out",
+        "z": "771c6922b705b177",
+        "name": "Send r1_lights",
+        "topic": "topic/r1_lights",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 1020,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "266ea3547c9ea32a",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "group": "8502275a53f7e711",
+        "order": 9,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Φωτεινότητα Node2",
+        "label": "Candila",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#52a4c7",
+            "#52a4c7"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "04050c5abe9cb09e",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "group": "8502275a53f7e711",
+        "order": 10,
+        "width": "6",
+        "height": 4,
+        "label": "Φωτεινότητα Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#52a4c7",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "457e7c5de4b21770",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Humitidy Node2",
+        "group": "8502275a53f7e711",
+        "order": 3,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Υγρασία Node2",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f08e145d65e93eae",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Humidity Node2",
+        "group": "8502275a53f7e711",
+        "order": 4,
+        "width": "6",
+        "height": "4",
+        "label": "Υγρασία Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1000,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c4aceab35821847",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "18928b57cd5cb8fa",
+        "type": "ui_level",
+        "z": "771c6922b705b177",
+        "group": "8502275a53f7e711",
+        "order": 11,
+        "width": "12",
+        "height": "2",
+        "name": "",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "1000",
+        "segWarn": "15",
+        "segHigh": "25",
+        "unit": "ppm",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": "1",
+        "colorschema": "rainbow",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 970,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "0a0f73f3eb07c599",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Pressure value",
+        "func": "msg.payload = msg.payload.pressure;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "ede1d6a28e1cd414"
+            ]
+        ]
+    },
+    {
+        "id": "23b2e793461814b7",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Pressure node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7f472804d1c32e56",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Pressure Node2",
+        "group": "8502275a53f7e711",
+        "order": 5,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Πίεση Node2",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "300",
+        "max": "1200",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6eb9856f94e22e4e",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Pressure Node2",
+        "group": "8502275a53f7e711",
+        "order": 6,
+        "width": "6",
+        "height": 4,
+        "label": "Πίεση Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1000,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97300858c8ff4423",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Air_quality value",
+        "func": "msg.payload = msg.payload.air_quality;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "bdafd31522991eb1",
+                "18928b57cd5cb8fa"
+            ]
+        ]
+    },
+    {
+        "id": "31cc7715f92be0dd",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Air_quality node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "25e3440273d107ed",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Air_quality Node2",
+        "group": "8502275a53f7e711",
+        "order": 7,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Ποιότητα αέρα Node2",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 1010,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9ca6a91689eb253f",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Air_quality Node2",
+        "group": "8502275a53f7e711",
+        "order": 8,
+        "width": "6",
+        "height": 4,
+        "label": "Ποότητα αέρα Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1138fef503d7f520",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a2e01748b2f0bc6f",
+        "type": "mqtt out",
+        "z": "280a3e168186d61a",
+        "name": "",
+        "topic": "topicName/led",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0491136f9b1c9a57",
+        "type": "debug",
+        "z": "280a3e168186d61a",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eda7011560ab39c0",
+        "type": "inject",
+        "z": "280a3e168186d61a",
+        "name": "On/Off",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "fbf4f577efc3ac79"
+            ]
+        ]
+    },
+    {
+        "id": "fbf4f577efc3ac79",
+        "type": "toggle",
+        "z": "280a3e168186d61a",
+        "name": "",
+        "onOffTopic": "",
+        "onValue": "on",
+        "onType": "str",
+        "offValue": "off",
+        "offType": "str",
+        "toggleTopic": "",
+        "toggleValue": "",
+        "toggleType": "str",
+        "passOnOff": "always",
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "0491136f9b1c9a57",
+                "a2e01748b2f0bc6f"
+            ]
+        ]
+    }
+]

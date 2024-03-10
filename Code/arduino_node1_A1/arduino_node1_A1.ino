@@ -18,19 +18,21 @@ void checkIaqSensorStatus(void);
 void errLeds(void);
 void sendMessage(String, byte, byte, byte, byte);
 String create_json(void);
+void InitBME688();
+void InitLoRaRFM95();
+
 
 // Create an object of the class Bsec
 Bsec iaqSensor;
 
+// reset the arduino
+void(* resetFunc) (void) = 0;
 
-void setup() {
-  Serial.begin(SERIAL_BAUD);
-  while (!Serial);
- 
+void InitBME688() {
   // Start BME688 IAQ sensor
+  Serial.println("Attempting to init BME688...");
   iaqSensor.begin(BME68X_I2C_ADDR_HIGH, Wire);
   checkIaqSensorStatus();
-
   bsec_virtual_sensor_t sensorList[13] = {
     BSEC_OUTPUT_IAQ,
     BSEC_OUTPUT_STATIC_IAQ,
@@ -46,12 +48,15 @@ void setup() {
     BSEC_OUTPUT_SENSOR_HEAT_COMPENSATED_HUMIDITY,
     BSEC_OUTPUT_GAS_PERCENTAGE
   };
-
   iaqSensor.updateSubscription(sensorList, 13, BSEC_SAMPLE_RATE_LP);
   checkIaqSensorStatus();
   Serial.println("BME688 initializing sensor Ok!");
+}
 
+
+void InitLoRaRFM95() {
   // Start LoRa RFM95 communicator
+  Serial.println("Attempting to init LoRaRFM95...");
   int n = 0;
   while (n < 10) {
     if (!LoRa.begin(868E6)) {
@@ -72,7 +77,19 @@ void setup() {
 }
 
 
+void setup() {
+  Serial.begin(SERIAL_BAUD);
+  //while (!Serial);
+  delay(3000);
+  InitBME688();
+  InitLoRaRFM95();
+}
+
+
 void loop() {
+
+  //if (millis() >= 300000) resetFunc();
+
   json_msg = create_json();
 
   int msgSum = 0;
@@ -183,5 +200,6 @@ void sendMessage(String json_message, byte gateway_id, byte node1_id, byte b1, b
   LoRa.write(b1);                       // add signature byte1
   LoRa.write(b2);                       // add signature byte2
   LoRa.print(json_message);                // add payload
+  delay(30);
   LoRa.endPacket();                     // finish packet and send it
 }

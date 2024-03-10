@@ -45,7 +45,7 @@ unsigned long int currentMillis;
 unsigned int interval = 1, seconds = 0;
 
 
-void InitLoRa() {
+void InitLoRaRFM95() {
   // Connecting to LoRa module
   Serial.println("Attempting to connect LoRa...");
 
@@ -56,7 +56,7 @@ void InitLoRa() {
     }
     else
     {
-      Serial.println("Initializing LoRa Ok!");
+      Serial.println("LoRa RFM95 initializing Ok!");
       delay(2000);
       break;
     }
@@ -64,7 +64,7 @@ void InitLoRa() {
     n++;
   }
   if (n >= 10) {
-      Serial.println("Failed to connect LoRa module.");
+    Serial.println("LoRa RFM95 initializing failed.");
       while (true);
   }
 }
@@ -133,12 +133,10 @@ void onReceive(int packetSize) {
 void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(SERIAL_BAUD);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }
+  delay(3000);
 
   // Connect LoRa, WiFi and MQTT brocker
-  InitLoRa();
+  InitLoRaRFM95();
   InitWiFi();
   InitMqtt();  
 
