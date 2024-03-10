@@ -1,0 +1,2540 @@
+[
+    {
+        "id": "c76e8122ea7bac71",
+        "type": "tab",
+        "label": "Class: A1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "771c6922b705b177",
+        "type": "tab",
+        "label": "Node2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "92c52b9b728cfb75",
+        "type": "tab",
+        "label": "Maps",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b5b07a40e9c6fb2e",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 80,
+        "wires": [
+            [
+                "9c8352457a92d70b",
+                "131cacaa1d78d301"
+            ]
+        ]
+    },
+    {
+        "id": "449eac0a205a6526",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 480,
+        "wires": [
+            [
+                "a1be5e982c7cc84a",
+                "19158d9b69b632d1",
+                "867b01e36327dfae"
+            ]
+        ]
+    },
+    {
+        "id": "ade3bd60c737dc38",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 840,
+        "y": 880,
+        "wires": [
+            [
+                "86f3d313ac0255f9",
+                "a278e43c89f04c1c"
+            ]
+        ]
+    },
+    {
+        "id": "efb8e09ff72bdf82",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 200,
+        "wires": [
+            [
+                "c0536d6539885c79",
+                "5fcbcad65a0e4189",
+                "46c8d601b8d99038"
+            ]
+        ]
+    },
+    {
+        "id": "d68f1c8dd59edb06",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 100,
+        "wires": [
+            [
+                "122f36e64e1d55bf",
+                "8284ebc3f0f5c5ee"
+            ]
+        ]
+    },
+    {
+        "id": "da479a5d01c32ddd",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 700,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5c09ca80f656b61",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "16140224f0e255ac"
+            ]
+        ]
+    },
+    {
+        "id": "92241340851b70a5",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 220,
+        "wires": [
+            [
+                "32b48d3a32fb1ee4",
+                "34343b18fae3af71",
+                "ac1e3a1c61881d57"
+            ]
+        ]
+    },
+    {
+        "id": "dfe60b1951f6a0de",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 780,
+        "wires": [
+            [
+                "749afb641148588c",
+                "493025f7ea7658f5"
+            ]
+        ]
+    },
+    {
+        "id": "ede1d6a28e1cd414",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 640,
+        "wires": [
+            [
+                "23b2e793461814b7",
+                "7f472804d1c32e56",
+                "6eb9856f94e22e4e"
+            ]
+        ]
+    },
+    {
+        "id": "bdafd31522991eb1",
+        "type": "junction",
+        "z": "771c6922b705b177",
+        "x": 840,
+        "y": 920,
+        "wires": [
+            [
+                "31cc7715f92be0dd",
+                "25e3440273d107ed",
+                "9ca6a91689eb253f"
+            ]
+        ]
+    },
+    {
+        "id": "f4615b3ad2b6df25",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 620,
+        "wires": [
+            [
+                "f33e49b6ad16a3a5",
+                "19ae4a3278a0a9ba",
+                "180f85e2cbe6f768"
+            ]
+        ]
+    },
+    {
+        "id": "55aab2e5f84e00c6",
+        "type": "junction",
+        "z": "c76e8122ea7bac71",
+        "x": 820,
+        "y": 760,
+        "wires": [
+            [
+                "f413a421fe92812d",
+                "11f19f4b26b76278",
+                "589bcdfb4cbe1122"
+            ]
+        ]
+    },
+    {
+        "id": "76b686ccae53653a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.3.30",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "11c936059aa3867a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0b02e048495b542e",
+        "type": "ui_tab",
+        "name": "Class  A1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed727437921543ca",
+        "type": "ui_tab",
+        "name": "Node2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "29e2bf452d5cc9c8",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "0b02e048495b542e",
+        "order": 7,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66d024c0d9fa31d1",
+        "type": "ui_group",
+        "name": "Group2",
+        "tab": "0b02e048495b542e",
+        "order": 8,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7ef82e1ef84e5eb",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "ed727437921543ca",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8502275a53f7e711",
+        "type": "ui_group",
+        "name": "Group2",
+        "tab": "ed727437921543ca",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fe6114c3fb1f2642",
+        "type": "mqtt in",
+        "z": "c76e8122ea7bac71",
+        "name": "Class A1 JSON data",
+        "topic": "topic/node1",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "3a6317a110dee510",
+                "6e53147c3a8fa153",
+                "c7e90f09ca1e5456",
+                "ee9ffb86432feb68",
+                "3aa805ff24486ba5",
+                "4175049b1167a77e",
+                "1be03da5e4a782c1",
+                "742de647a2c7f0e4"
+            ]
+        ]
+    },
+    {
+        "id": "9c8352457a92d70b",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Table JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3a6317a110dee510",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Data in table",
+        "func": "var tableData = flow.get(\"savedData1\") || [];\n\nif (typeof tableData  === \"object\") {\n    tableData.unshift({\n            \"timestamp\"     : new Date().toLocaleString(),\n            \"temperature\"   : msg.payload.Temperature,\n            \"humidity\"      : msg.payload.Humidity,\n            \"pressure\"      : msg.payload.Pressure,\n            \"iaq\"           : msg.payload.IAQ,\n            \"co2\"           : msg.payload.CO2,\n            \"ldr\"           : msg.payload.Ldr\n    });\n}\n\nif (tableData.length > 6) {\n    tableData.pop();\n}\n\nmsg.payload = tableData;\n\nflow.set(\"savedData1\", tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "b5b07a40e9c6fb2e"
+            ]
+        ]
+    },
+    {
+        "id": "131cacaa1d78d301",
+        "type": "ui_table",
+        "z": "c76e8122ea7bac71",
+        "group": "29e2bf452d5cc9c8",
+        "name": "Πίνακας στοιχείων",
+        "order": 1,
+        "width": "15",
+        "height": "4",
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Date/Time (UTC)",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "temperature",
+                "title": "Tair (°C)",
+                "width": "100",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "humidity",
+                "title": "H %",
+                "width": "90",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "pressure",
+                "title": "Πίεση (hPa)",
+                "width": "120",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "iaq",
+                "title": "IAQ ppm",
+                "width": "100",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "co2",
+                "title": "CO2 ppm",
+                "width": "100",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ldr",
+                "title": "Φωτ/τητα (Can)",
+                "width": "120",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c5f4291fc9cc028b",
+        "type": "comment",
+        "z": "c76e8122ea7bac71",
+        "name": "Format data for the table",
+        "info": "",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6e53147c3a8fa153",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract temprature value",
+        "func": "msg.payload = msg.payload.Temperature;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "efb8e09ff72bdf82"
+            ]
+        ]
+    },
+    {
+        "id": "c0536d6539885c79",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Θερμοκρασία Α1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5fcbcad65a0e4189",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Θερμοκρασία Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 1,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Θερμοκρασία: A1",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c7e90f09ca1e5456",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract LDR value",
+        "func": "msg.payload = msg.payload.ldr;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 880,
+        "wires": [
+            [
+                "ade3bd60c737dc38"
+            ]
+        ]
+    },
+    {
+        "id": "a278e43c89f04c1c",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Φωτεινότητα: Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 7,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Φωτεινότητα: Α1",
+        "label": "Candila",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#52a4c7",
+            "#52a4c7"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "86f3d313ac0255f9",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Φωτεινότητα: Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 8,
+        "width": "6",
+        "height": 4,
+        "label": "Φωτεινότητα: Α1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#52a4c7",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3aa805ff24486ba5",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract Pressure value",
+        "func": "msg.payload = msg.payload.Pressure;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 480,
+        "wires": [
+            [
+                "449eac0a205a6526"
+            ]
+        ]
+    },
+    {
+        "id": "a1be5e982c7cc84a",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Ατμ. Πίεση: Α1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "19158d9b69b632d1",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Ατμ. Πίεση: Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 5,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Ατμ. Πίεση: Α1",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "300",
+        "max": "1200",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "867b01e36327dfae",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Ατμ. Πίεση: Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 6,
+        "width": "6",
+        "height": 4,
+        "label": "Ατμ. Πίεση: Α1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#3a9fcb",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee9ffb86432feb68",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Input JSON obj",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "46c8d601b8d99038",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Θερμοκρασία Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 2,
+        "width": "6",
+        "height": 4,
+        "label": "Θερμοκρασία: A1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4175049b1167a77e",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "function 5",
+        "func": "msg.payload = msg.payload.Humidity;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "a009082b699e6192",
+                "8b326e931fd8096a",
+                "0ce4864f93ce3a92"
+            ]
+        ]
+    },
+    {
+        "id": "a009082b699e6192",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Υγρασία Α1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8b326e931fd8096a",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Υγρασία Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 3,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Υγρασία: A1",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0ce4864f93ce3a92",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Υγρασία Α1",
+        "group": "66d024c0d9fa31d1",
+        "order": 4,
+        "width": "6",
+        "height": 4,
+        "label": "Υγρασία: Α1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1be03da5e4a782c1",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract IAQ value",
+        "func": "msg.payload = msg.payload.IAQ;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 620,
+        "wires": [
+            [
+                "f4615b3ad2b6df25"
+            ]
+        ]
+    },
+    {
+        "id": "f33e49b6ad16a3a5",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "Ποιότητα αέρα: Α1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "19ae4a3278a0a9ba",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "Ποιότητα αέρα: Α1",
+        "group": "29e2bf452d5cc9c8",
+        "order": 2,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Ποιότητα αέρα: Α1",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "1000",
+        "colors": [
+            "#3ada25",
+            "#c3c332",
+            "#ca3838"
+        ],
+        "seg1": "150",
+        "seg2": "400",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "180f85e2cbe6f768",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "Ποιότητα αέρα: Α1",
+        "group": "29e2bf452d5cc9c8",
+        "order": 3,
+        "width": "6",
+        "height": 4,
+        "label": "Ποιότητα αέρα: Α1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "20",
+        "ymax": "800",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#3acb43",
+            "#aec7e8",
+            "#ff7f0e",
+            "#b98222",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "742de647a2c7f0e4",
+        "type": "function",
+        "z": "c76e8122ea7bac71",
+        "name": "Extract CO2 value",
+        "func": "msg.payload = msg.payload.CO2;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 760,
+        "wires": [
+            [
+                "55aab2e5f84e00c6"
+            ]
+        ]
+    },
+    {
+        "id": "f413a421fe92812d",
+        "type": "debug",
+        "z": "c76e8122ea7bac71",
+        "name": "CO2 αέρα: Α1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "11f19f4b26b76278",
+        "type": "ui_gauge",
+        "z": "c76e8122ea7bac71",
+        "name": "CO2 αέρα: Α1",
+        "group": "29e2bf452d5cc9c8",
+        "order": 4,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "CO2 αέρα: Α1",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "550",
+        "max": "3000",
+        "colors": [
+            "#37e143",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "1200",
+        "seg2": "2000",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "589bcdfb4cbe1122",
+        "type": "ui_chart",
+        "z": "c76e8122ea7bac71",
+        "name": "CO2 αέρα: Α1",
+        "group": "29e2bf452d5cc9c8",
+        "order": 5,
+        "width": "6",
+        "height": 4,
+        "label": "CO2 αέρα: Α1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb3eb870e60e64ae",
+        "type": "mqtt in",
+        "z": "771c6922b705b177",
+        "name": "Home inside JSON",
+        "topic": "topic/node2",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "76b686ccae53653a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "57e31de528e4b1ca",
+                "1138fef503d7f520"
+            ]
+        ]
+    },
+    {
+        "id": "122f36e64e1d55bf",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Table JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cf46a8b246670ddb",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Data in table",
+        "func": "var tableData = flow.get(\"savedData2\") || [];\n// var alarm_led = \"OFF\";\n\n/*if (msg.payload.red_led) {\n    alarm_led = \"ON\";\n}\nelse {\n    alarm_led = \"OFF\";\n}*/\n\nif (typeof tableData  === \"object\") {\n    tableData.unshift({\n            \"timestamp\"     : new Date().toLocaleString(),\n            \"temperature\"   : msg.payload.temperature,\n            \"air_quality\"   : msg.payload.air_quality,\n            \"pressure\"      : msg.payload.pressure,\n            \"humidity\"      : msg.payload.humidity,\n            \"ldr\"           : msg.payload.ldr\n    });\n}\n\nif (tableData.length > 6) {\n    tableData.pop();\n}\n\nmsg.payload = tableData;\n\nflow.set(\"savedData2\", tableData);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "d68f1c8dd59edb06"
+            ]
+        ]
+    },
+    {
+        "id": "8284ebc3f0f5c5ee",
+        "type": "ui_table",
+        "z": "771c6922b705b177",
+        "group": "b7ef82e1ef84e5eb",
+        "name": "Node2 table",
+        "order": 1,
+        "width": 15,
+        "height": 4,
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Date/Time (UTC)",
+                "width": "160",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "temperature",
+                "title": "Tair (°C)",
+                "width": "120",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "air_quality",
+                "title": "Αέρας (ppm)",
+                "width": "125",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "pressure",
+                "title": "Πίεση (hPa)",
+                "width": "140",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "humidity",
+                "title": "Υγρασία (%)",
+                "width": "130",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ldr",
+                "title": "LDR (Can)",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ff52b8a762d342ba",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Foarmat data for the table",
+        "info": "",
+        "x": 650,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6d769874d88e6a16",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract temprature value",
+        "func": "msg.payload = msg.payload.temperature;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "92241340851b70a5"
+            ]
+        ]
+    },
+    {
+        "id": "32b48d3a32fb1ee4",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Tair node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "34343b18fae3af71",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Temperature Node2",
+        "group": "8502275a53f7e711",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Θερμοκρασία Node2",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ac1e3a1c61881d57",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Temperature Node2",
+        "group": "8502275a53f7e711",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Θερμοκρασία Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e6e600",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d8378a33cbaefb8",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract LDR value",
+        "func": "msg.payload = msg.payload.ldr;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "9c4aceab35821847",
+                "266ea3547c9ea32a",
+                "04050c5abe9cb09e"
+            ]
+        ]
+    },
+    {
+        "id": "bbebce59da751198",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Humidity value",
+        "func": "msg.payload = msg.payload.humidity;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "e5c09ca80f656b61",
+                "457e7c5de4b21770",
+                "f08e145d65e93eae"
+            ]
+        ]
+    },
+    {
+        "id": "16140224f0e255ac",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Humidity Node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d7bd0fac8cfc84aa",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract alarm LED status",
+        "func": "if (msg.payload.red_led==1) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 780,
+        "wires": [
+            [
+                "dfe60b1951f6a0de"
+            ]
+        ]
+    },
+    {
+        "id": "749afb641148588c",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Alarm LED status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "493025f7ea7658f5",
+        "type": "ui_led",
+        "z": "771c6922b705b177",
+        "order": 4,
+        "group": "b7ef82e1ef84e5eb",
+        "width": "6",
+        "height": "1",
+        "label": "Alarm led Node2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#595f59",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Alarm led Node2",
+        "x": 1010,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "286743f714bb64c5",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Input JSON obj",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "57e31de528e4b1ca",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Convert str values to numbers",
+        "func": "msg.payload.temperature = parseFloat(msg.payload.Temperature);\nmsg.payload.humidity = parseInt(msg.payload.Humidity);\nmsg.payload.pressure = parseFloat(msg.payload.Pressure);\nmsg.payload.ldr = parseInt(msg.payload.Ldr); \nmsg.payload.air_quality = parseFloat(msg.payload.Air_quality);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "cf46a8b246670ddb",
+                "6d769874d88e6a16",
+                "5d8378a33cbaefb8",
+                "286743f714bb64c5",
+                "bbebce59da751198",
+                "d7bd0fac8cfc84aa",
+                "8737939416951be7",
+                "0a0f73f3eb07c599",
+                "97300858c8ff4423",
+                "cfe04ab298b51eaf"
+            ]
+        ]
+    },
+    {
+        "id": "8737939416951be7",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "function 4",
+        "func": "if (msg.payload.ldr < 250) {\n    msg.payload = \"R1_LIGHTS_ON\";\n}\nelse {\n    msg.payload = \"R1_LIGHTS_OFF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1060,
+        "wires": [
+            [
+                "b8a0394003094ed7"
+            ]
+        ]
+    },
+    {
+        "id": "b8a0394003094ed7",
+        "type": "mqtt out",
+        "z": "771c6922b705b177",
+        "name": "Send r1_lights",
+        "topic": "topic/r1_lights",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76b686ccae53653a",
+        "x": 1020,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "266ea3547c9ea32a",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "group": "8502275a53f7e711",
+        "order": 9,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Φωτεινότητα Node2",
+        "label": "Candila",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#52a4c7",
+            "#52a4c7"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "04050c5abe9cb09e",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "group": "8502275a53f7e711",
+        "order": 10,
+        "width": "6",
+        "height": 4,
+        "label": "Φωτεινότητα Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#52a4c7",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "457e7c5de4b21770",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Humitidy Node2",
+        "group": "8502275a53f7e711",
+        "order": 3,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Υγρασία Node2",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f08e145d65e93eae",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Humidity Node2",
+        "group": "8502275a53f7e711",
+        "order": 4,
+        "width": "6",
+        "height": "4",
+        "label": "Υγρασία Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1000,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c4aceab35821847",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "LDR Node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "18928b57cd5cb8fa",
+        "type": "ui_level",
+        "z": "771c6922b705b177",
+        "group": "8502275a53f7e711",
+        "order": 11,
+        "width": "12",
+        "height": "2",
+        "name": "",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "1000",
+        "segWarn": "15",
+        "segHigh": "25",
+        "unit": "ppm",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": "1",
+        "colorschema": "rainbow",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 970,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "0a0f73f3eb07c599",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Pressure value",
+        "func": "msg.payload = msg.payload.pressure;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "ede1d6a28e1cd414"
+            ]
+        ]
+    },
+    {
+        "id": "23b2e793461814b7",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Pressure node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7f472804d1c32e56",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Pressure Node2",
+        "group": "8502275a53f7e711",
+        "order": 5,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Πίεση Node2",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "300",
+        "max": "1200",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6eb9856f94e22e4e",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Pressure Node2",
+        "group": "8502275a53f7e711",
+        "order": 6,
+        "width": "6",
+        "height": 4,
+        "label": "Πίεση Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1000,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97300858c8ff4423",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Extract Air_quality value",
+        "func": "msg.payload = msg.payload.air_quality;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "bdafd31522991eb1",
+                "18928b57cd5cb8fa"
+            ]
+        ]
+    },
+    {
+        "id": "31cc7715f92be0dd",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "Air_quality node2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "25e3440273d107ed",
+        "type": "ui_gauge",
+        "z": "771c6922b705b177",
+        "name": "Air_quality Node2",
+        "group": "8502275a53f7e711",
+        "order": 7,
+        "width": "6",
+        "height": 4,
+        "gtype": "gage",
+        "title": "Ποιότητα αέρα Node2",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1000",
+        "colors": [
+            "#52a4c7",
+            "#b7b72a",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 1010,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9ca6a91689eb253f",
+        "type": "ui_chart",
+        "z": "771c6922b705b177",
+        "name": "Air_quality Node2",
+        "group": "8502275a53f7e711",
+        "order": 8,
+        "width": "6",
+        "height": 4,
+        "label": "Ποότητα αέρα Node2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ca3838",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1138fef503d7f520",
+        "type": "debug",
+        "z": "771c6922b705b177",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "96a6fb95706371f8",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Χάρτης σταθμών στη Γλυφάδα",
+        "info": "",
+        "x": 180,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "02fbe1c1233fbf92",
+        "type": "ui_template",
+        "z": "771c6922b705b177",
+        "group": "b7ef82e1ef84e5eb",
+        "name": "Node2 map",
+        "order": 2,
+        "width": 15,
+        "height": "9",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f351157110ae2c3",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Filter",
+        "func": "if (msg.payload.action === \"connected\") {\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1120,
+        "wires": [
+            [
+                "cfe04ab298b51eaf"
+            ]
+        ]
+    },
+    {
+        "id": "cfe04ab298b51eaf",
+        "type": "function",
+        "z": "771c6922b705b177",
+        "name": "Set station position",
+        "func": "// Glyfada\nvar lat = 37.90147;\nvar lon = 23.76821;\n\n// Kavros\n// var lat = 35.34796;\n// var lon = 24.29862;\n\nvar tair = msg.payload.Temperature;\nvar hum = msg.payload.Humidity;\nvar pre = msg.payload.Pressure;\nvar iaq = msg.payload.IAQ;\nvar co2 = msg.payload.CO2;\nvar ldr = msg.payload.Ldr;\n\n/*tair = tair.toFixed(2);\nldr = ldr.toFixed(2);\npre = pre.toFixed(2);*/\n\nmsg.payload = {\n    lat : lat,\n    lon : lon,\n    name : \"Node2\",\n    icon : \"fa-map-marker fa-3x\",\n    iconColor: \"blue\",\n    \"Θερμοκρασία (°C)\": tair,\n    \"Υγρασία (%)\": hum,\n    \"Ατμ. Πίεση (hPa)\": pre,\n    \"Ποιότητα αέρα (ppm)\": iaq,\n    \"CO2 αέρα (co2)\": co2,\n    \"Ldr (Can)\": ldr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1120,
+        "wires": [
+            [
+                "204cb46e396d0d14"
+            ]
+        ]
+    },
+    {
+        "id": "204cb46e396d0d14",
+        "type": "worldmap",
+        "z": "771c6922b705b177",
+        "name": "Node2 map",
+        "lat": "37.90147",
+        "lon": "23.76821",
+        "zoom": "15",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_node2",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 830,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "d556bd47cfd4b352",
+        "type": "worldmap in",
+        "z": "771c6922b705b177",
+        "name": "Node2 map",
+        "path": "/worldmap_node2",
+        "events": "connect,disconnect,point,layer,bounds,files,draw,other",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "7f351157110ae2c3"
+            ]
+        ]
+    },
+    {
+        "id": "c22e19f88e1e9d3c",
+        "type": "inject",
+        "z": "771c6922b705b177",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/worldmap_node2",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "bda665feb0640712"
+            ]
+        ]
+    },
+    {
+        "id": "bda665feb0640712",
+        "type": "template",
+        "z": "771c6922b705b177",
+        "name": "Dimentions",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload}}} height=465px; width=760px;></iframe>",
+        "output": "str",
+        "x": 390,
+        "y": 1180,
+        "wires": [
+            [
+                "02fbe1c1233fbf92"
+            ]
+        ]
+    },
+    {
+        "id": "a089ffe897952802",
+        "type": "inject",
+        "z": "771c6922b705b177",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1280,
+        "wires": [
+            [
+                "9e6981cffb58ef36"
+            ]
+        ]
+    },
+    {
+        "id": "9e6981cffb58ef36",
+        "type": "change",
+        "z": "771c6922b705b177",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "savedData2",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be71306424ccb652",
+        "type": "comment",
+        "z": "771c6922b705b177",
+        "name": "Cleat table data",
+        "info": "",
+        "x": 140,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "f4d6ae55ed8ea2bb",
+        "type": "ui_template",
+        "z": "92c52b9b728cfb75",
+        "group": "29e2bf452d5cc9c8",
+        "name": "Node1 map",
+        "order": 6,
+        "width": "15",
+        "height": "9",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f6b68fd212bb31f",
+        "type": "function",
+        "z": "92c52b9b728cfb75",
+        "name": "Filter",
+        "func": "if (msg.payload.action === \"connected\") {\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "c30b4232bf7d05fa"
+            ]
+        ]
+    },
+    {
+        "id": "c30b4232bf7d05fa",
+        "type": "function",
+        "z": "92c52b9b728cfb75",
+        "name": "Set station position",
+        "func": "// Glyfada\nvar lat = 37.90147;\nvar lon = 23.76821;\n\n// Kavros\n/*var lat = 35.34796;\nvar lon = 24.29862;*/\n\nvar tair = msg.payload.temperature;\nvar ldr = msg.payload.ldr;\nvar pre = msg.payload.pressure;\n\n/*tair = tair.toFixed(2);\nldr = ldr.toFixed(2);\npre = pre.toFixed(2);*/\n\nmsg.payload = {\n    lat : lat,\n    lon : lon,\n    name : \"Node1\",\n    icon : \"fa-map-marker fa-3x\",\n    iconColor: \"blue\",\n    \"Tair (°C)\": tair,\n    \"Pressure (hPa)\": pre,\n    \"Ldr (Can)\": ldr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 340,
+        "wires": [
+            [
+                "a256859b4eab2c99"
+            ]
+        ]
+    },
+    {
+        "id": "a256859b4eab2c99",
+        "type": "worldmap",
+        "z": "92c52b9b728cfb75",
+        "name": "Node1 map",
+        "lat": "37.90147",
+        "lon": "23.76821",
+        "zoom": "15",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_node1",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 930,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4f9776e5a9cfcffc",
+        "type": "worldmap in",
+        "z": "92c52b9b728cfb75",
+        "name": "Node1 map",
+        "path": "/worldmap_node1",
+        "events": "connect,disconnect,point,layer,bounds,files,draw,other",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "6f6b68fd212bb31f"
+            ]
+        ]
+    },
+    {
+        "id": "fd7c7455f469ab5d",
+        "type": "inject",
+        "z": "92c52b9b728cfb75",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/worldmap_node1",
+        "payloadType": "str",
+        "x": 270,
+        "y": 400,
+        "wires": [
+            [
+                "f69552fc773899c3"
+            ]
+        ]
+    },
+    {
+        "id": "f69552fc773899c3",
+        "type": "template",
+        "z": "92c52b9b728cfb75",
+        "name": "Dimentions",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload}}} height=465px; width=760px;></iframe>",
+        "output": "str",
+        "x": 490,
+        "y": 400,
+        "wires": [
+            [
+                "f4d6ae55ed8ea2bb"
+            ]
+        ]
+    },
+    {
+        "id": "41851e5d0e85c872",
+        "type": "comment",
+        "z": "92c52b9b728cfb75",
+        "name": "Χάρτης σταθμών στη Γλυφάδα",
+        "info": "",
+        "x": 280,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ce9dd58ee7c5d661",
+        "type": "inject",
+        "z": "92c52b9b728cfb75",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "27bbbf3197873752"
+            ]
+        ]
+    },
+    {
+        "id": "27bbbf3197873752",
+        "type": "change",
+        "z": "92c52b9b728cfb75",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "savedData1",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ad287bb78219a75",
+        "type": "comment",
+        "z": "92c52b9b728cfb75",
+        "name": "Cleat table data",
+        "info": "",
+        "x": 240,
+        "y": 460,
+        "wires": []
+    }
+]
