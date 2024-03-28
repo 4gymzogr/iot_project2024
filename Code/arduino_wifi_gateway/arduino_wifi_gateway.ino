@@ -7,6 +7,11 @@
 
 #define SERIAL_BAUD   115200
 
+#define GATEWAY   0xDD
+#define NODE1     0xAA
+#define NODE2     0xBB
+#define NODE3     0xCC
+
 #define SS    10  // D10
 #define RST   9   // D9
 #define DIO0   2  // D2
@@ -35,6 +40,13 @@ byte node1_id = 0xAA;
 byte node2_id = 0xBB;
 byte node3_id = 0xCC;
 
+int recipient;          // recipient address
+byte sender;            // sender address
+//byte incomingMsgId = LoRa.read();     // incoming msg ID
+byte incomingLength;    // incoming msg length
+byte sigByte1;          // incoming sigByte1
+byte sigByte2;          // incoming sigByte2
+
 String SenderNode, buf = "", incoming = "";
 String rssi_buf;
 
@@ -43,6 +55,9 @@ unsigned long int currentSecs;
 unsigned long int previousSecs;
 unsigned long int currentMillis;
 unsigned int interval = 1, seconds = 0;
+
+// reset the arduino
+void(* resetFunc) (void) = 0;
 
 
 void InitLoRaRFM95() {
@@ -99,7 +114,10 @@ void InitMqtt() {
   if (!mqttClient.connect(broker, port)) {
     Serial.print("MQTT connection failed! Error code = ");
     Serial.println(mqttClient.connectError());
-    while (1);
+
+    Serial.println("Soft reset....");
+    NVIC_SystemReset(); 
+    delay(2000);
   }
   Serial.println("You're connected to the MQTT broker!");
   Serial.println();
@@ -110,12 +128,12 @@ void onReceive(int packetSize) {
   if (packetSize == 0) return;
 
   // read four bytes for packet header:
-  int recipient = LoRa.read();          // recipient address
-  byte sender = LoRa.read();            // sender address
+  recipient = LoRa.read();          // recipient address
+  sender = LoRa.read();            // sender address
   //byte incomingMsgId = LoRa.read();     // incoming msg ID
-  byte incomingLength = LoRa.read();    // incoming msg length
-  byte sigByte1 = LoRa.read();          // incoming sigByte1
-  byte sigByte2 = LoRa.read();          // incoming sigByte2
+  incomingLength = LoRa.read();    // incoming msg length
+  sigByte1 = LoRa.read();          // incoming sigByte1
+  sigByte2 = LoRa.read();          // incoming sigByte2
 
   incoming = "";
   rssi_buf = "";
@@ -168,6 +186,11 @@ void onMqttMessage(int messageSize) {
 
 
 void loop() {
+  if (millis() >= 10800000) { 
+    Serial.println("Soft reset....");
+    NVIC_SystemReset(); 
+  }
+
   // check the network connection once every 10 seconds:
   if (!wifiClient.connected()) {
     InitWiFi();
@@ -175,12 +198,29 @@ void loop() {
   }
 
   if (flag) {
+    if (sender == NODE1) {
+      Serial.print("Class: A1 => ");
+      mqttClient.beginMessage(node1_topic);
+      mqttClient.print(incoming);
+      mqttClient.endMessage();
+    }
+    else if (sender == NODE2) {
+      Serial.print("Class: B2 => ");
+      mqttClient.beginMessage(node2_topic);
+      mqttClient.print(incoming);
+      mqttClient.endMessage();
+    }
+    else if (sender == NODE3) {
+      Serial.print("Class: G2 => ");
+      mqttClient.beginMessage(node3_topic);
+      mqttClient.print(incoming);
+      mqttClient.endMessage();
+    }
+
     Serial.print(incoming);
     Serial.println(rssi_buf);
     
-    mqttClient.beginMessage(node1_topic);
-    mqttClient.print(incoming);
-    mqttClient.endMessage();
+    
     
     flag = false;
   }

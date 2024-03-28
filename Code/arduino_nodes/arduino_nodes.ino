@@ -1,19 +1,23 @@
+#include <MQ135.h>
 #include <LoRa.h>
 #include "bsec.h"
 
 // set serial communication speed
 #define SERIAL_BAUD   115200
 #define GATEWAY   0xDD
-#define NODE      0xAA
-//#define NODE      0xBB
+//#define NODE      0xAA
+#define NODE      0xBB
 //#define NODE      0xCC
+
+#define PIN_MQ135   A2
+
+MQ135 mq135_sensor(PIN_MQ135);
 
 // Global variables
 unsigned int ldr, dataLength;
 byte byte1, byte2;
 char*   total;
 String output, json_msg = "";
-
 
 // Functions declarations
 void checkIaqSensorStatus(void);
@@ -22,16 +26,41 @@ void sendMessage(String, byte, byte, byte, byte);
 String create_json(void);
 void InitBME688();
 void InitLoRaRFM95();
+float getMQ135ppm(float, float);
 
 
 // Create an object of the class Bsec
 Bsec iaqSensor;
+
+float getMQ135ppm(float temperature, float humidity) {
+  float rzero = mq135_sensor.getRZero();
+  float correctedRZero = mq135_sensor.getCorrectedRZero(temperature, humidity);
+  float resistance = mq135_sensor.getResistance();
+  float ppm = mq135_sensor.getPPM();
+  float correctedPPM = mq135_sensor.getCorrectedPPM(temperature, humidity);
+
+  /*Serial.print("MQ135 RZero: ");
+  Serial.print(rzero);
+  Serial.print("\t Corrected RZero: ");
+  Serial.print(correctedRZero);
+  Serial.print("\t Resistance: ");
+  Serial.print(resistance);
+  Serial.print("\t PPM: ");
+  Serial.print(ppm);
+  Serial.print("\t Corrected PPM: ");
+  Serial.print(correctedPPM);
+  Serial.println("ppm");*/
+
+  return correctedPPM;
+}
 
 
 void InitBME688() {
   // Start BME688 IAQ sensor
   Serial.println("Attempting to init BME688...");
   iaqSensor.begin(BME68X_I2C_ADDR_HIGH, Wire);
+  output = "\nBSEC library version " + String(iaqSensor.version.major) + "." + String(iaqSensor.version.minor) + "." + String(iaqSensor.version.major_bugfix) + "." + String(iaqSensor.version.minor_bugfix);
+  Serial.println(output);
   checkIaqSensorStatus();
   bsec_virtual_sensor_t sensorList[13] = {
     BSEC_OUTPUT_IAQ,
@@ -87,11 +116,6 @@ void setup() {
 
 
 void loop() {
-  if (millis() >= 10800000) { 
-    Serial.println("Soft reset....");
-    //NVIC_SystemReset(); 
-  }
-
   json_msg = create_json();
 
   int msgSum = 0;
@@ -109,9 +133,14 @@ void loop() {
   //memset(total, '\0', sizeof(dataLength));
   //json_msg.toCharArray(total, dataLength);
   Serial.println(json_msg);
-  sendMessage(json_msg, byte1, byte2);
+ sendMessage(json_msg, byte1, byte2);
 
   delay(random(3, 7)*1000);
+
+   if (millis() >= 10800000) { 
+    Serial.println("Soft reset....");
+    NVIC_SystemReset(); 
+  }
 }
 
 
@@ -181,8 +210,16 @@ String create_json(void) {
     json_message.concat(String(iaqSensor.iaq));
     json_message.concat(",");
 
+    json_message.concat("\"IAQ\":");
+    json_message.concat(String(iaqSensor.iaqAccuracy));
+    json_message.concat(",");
+
     json_message.concat("\"CO2\":");
     json_message.concat(String(iaqSensor.co2Equivalent));
+    json_message.concat(",");
+
+json_message.concat("\"Gas\":");
+    json_message.concat(String(iaqSensor.gasResistance));
     json_message.concat(",");
 
     json_message.concat("\"Ldr\":");

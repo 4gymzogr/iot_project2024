@@ -3,12 +3,10 @@
 
 // set serial communication speed
 #define SERIAL_BAUD   115200
-#define GATEWAY   0xDD
-#define NODE      0xAA
-//#define NODE      0xBB
-//#define NODE      0xCC
 
 // Global variables
+byte gateway_id = 0xDD;
+byte node2_id = 0xBB;
 unsigned int ldr, dataLength;
 byte byte1, byte2;
 char*   total;
@@ -87,9 +85,10 @@ void setup() {
 
 
 void loop() {
+
   if (millis() >= 10800000) { 
     Serial.println("Soft reset....");
-    //NVIC_SystemReset(); 
+    NVIC_SystemReset(); 
   }
 
   json_msg = create_json();
@@ -109,9 +108,9 @@ void loop() {
   //memset(total, '\0', sizeof(dataLength));
   //json_msg.toCharArray(total, dataLength);
   Serial.println(json_msg);
-  sendMessage(json_msg, byte1, byte2);
+  sendMessage(json_msg, gateway_id, node2_id, byte1, byte2);
 
-  delay(random(3, 7)*1000);
+  delay(3000);
 }
 
 
@@ -193,10 +192,10 @@ String create_json(void) {
 }
 
 
-void sendMessage(String json_message, byte b1, byte b2) {
+void sendMessage(String json_message, byte gateway_id, byte node_id, byte b1, byte b2) {
   LoRa.beginPacket();                   // start packet
-  LoRa.write(GATEWAY);               // add destination address
-  LoRa.write(NODE);                    // add sender address
+  LoRa.write(gateway_id);               // add destination address
+  LoRa.write(node_id);                    // add sender address
   //LoRa.write(msgCount);                 // add message ID
   LoRa.write(json_message.length());       // add payload length
   LoRa.write(b1);                       // add signature byte1
